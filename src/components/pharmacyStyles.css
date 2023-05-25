@@ -1,0 +1,26 @@
+.slick-prev,
+.slick-next {
+  width: 30px;
+  height: 30px;
+  z-index: 10;
+}
+
+.slick-prev:hover::before,
+.slick-next:hover::before {
+  color: gainsboro;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 30px;
+  opacity: 1;
+  color: #e5e4e2;
+}
+
+.slick-prev {
+  left: 0;
+}
+
+.slick-next {
+  right: 0;
+}
