@@ -102,18 +102,22 @@ function PharmacyHome() {
                             medicines.map((item, index) => (
                                 <div className="">
                                     <ul className="h-64 mx-2 border border-gray-300 rounded-md" key={index}>
-                                        <li className="grid grid-rows-2">
-                                            <div className="flex items-center justify-center w-full h-40">
-                                                <img alt="medicine" height="40px" width="170px" src={item.img} className="" />
-                                            </div>
-                                            <div className="px-2 py-1">
-                                                <h2 className="font-semibold">{item.name}</h2>
-                                                <p className="">Rs <span className="font-medium text-red-700">{item.price}</span></p>
-                                                <div className="flex items-center justify-center mt-1">
-                                                    <button className="w-full h-8 font-semibold text-center text-gray-200 bg-teal-500 rounded-3xl">Add to Cart</button>
+                                        <Link to='/medicine-details'>
+                                            <li className="grid grid-rows-2">
+                                                <div className="flex items-center justify-center w-full h-40">
+                                                    <img alt="medicine" height="40px" width="170px" src={item.img} className="" />
                                                 </div>
-                                            </div>
-                                        </li>
+                                                <div className="px-2 py-1">
+                                                    <h2 className="font-semibold">{item.name}</h2>
+                                                    <p className="">Rs <span className="font-medium text-red-700">{item.price}</span></p>
+                                                    <Link to="medicine-cart">
+                                                        <div className="flex items-center justify-center mt-1">
+                                                            <button className="w-full h-8 font-semibold text-center text-gray-200 bg-teal-500 rounded-3xl">Add to Cart</button>
+                                                        </div>
+                                                    </Link>
+                                                </div>
+                                            </li>
+                                        </Link>
                                     </ul>
                                 </div>
                             ))
@@ -135,18 +139,22 @@ function PharmacyHome() {
                             medicines.map((item, index) => (
                                 <div className="">
                                     <ul className="h-64 mx-2 border border-gray-300 rounded-md" key={index}>
-                                        <li className="grid grid-rows-2">
-                                            <div className="flex items-center justify-center w-full h-40">
-                                                <img alt="medicine" height="40px" width="170px" src={item.img} className="" />
-                                            </div>
-                                            <div className="px-2 py-1">
-                                                <h2 className="font-semibold">{item.name}</h2>
-                                                <p className="">Rs <span className="font-medium text-red-700">{item.price}</span></p>
-                                                <div className="flex items-center justify-center mt-1">
-                                                    <button className="w-full h-8 font-semibold text-center text-gray-200 bg-teal-500 rounded-3xl">Add to Cart</button>
+                                        <Link to='/medicine-details'>
+                                            <li className="grid grid-rows-2">
+                                                <div className="flex items-center justify-center w-full h-40">
+                                                    <img alt="medicine" height="40px" width="170px" src={item.img} className="" />
                                                 </div>
-                                            </div>
-                                        </li>
+                                                <div className="px-2 py-1">
+                                                    <h2 className="font-semibold">{item.name}</h2>
+                                                    <p className="">Rs <span className="font-medium text-red-700">{item.price}</span></p>
+                                                    <Link to="medicine-cart">
+                                                        <div className="flex items-center justify-center mt-1">
+                                                            <button className="w-full h-8 font-semibold text-center text-gray-200 bg-teal-500 rounded-3xl">Add to Cart</button>
+                                                        </div>
+                                                    </Link>
+                                                </div>
+                                            </li>
+                                        </Link>
                                     </ul>
                                 </div>
                             ))
@@ -168,18 +176,22 @@ function PharmacyHome() {
                             medicines.map((item, index) => (
                                 <div className="">
                                     <ul className="h-64 mx-2 border border-gray-300 rounded-md" key={index}>
-                                        <li className="grid grid-rows-2">
-                                            <div className="flex items-center justify-center w-full h-40">
-                                                <img alt="medicine" height="40px" width="170px" src={item.img} className="" />
-                                            </div>
-                                            <div className="px-2 py-1">
-                                                <h2 className="font-semibold">{item.name}</h2>
-                                                <p className="">Rs <span className="font-medium text-red-700">{item.price}</span></p>
-                                                <div className="flex items-center justify-center mt-1">
-                                                    <button className="w-full h-8 font-semibold text-center text-gray-200 bg-teal-500 rounded-3xl">Add to Cart</button>
+                                        <Link to='/medicine-details'>
+                                            <li className="grid grid-rows-2">
+                                                <div className="flex items-center justify-center w-full h-40">
+                                                    <img alt="medicine" height="40px" width="170px" src={item.img} className="" />
                                                 </div>
-                                            </div>
-                                        </li>
+                                                <div className="px-2 py-1">
+                                                    <h2 className="font-semibold">{item.name}</h2>
+                                                    <p className="">Rs <span className="font-medium text-red-700">{item.price}</span></p>
+                                                    <Link to="medicine-cart">
+                                                        <div className="flex items-center justify-center mt-1">
+                                                            <button className="w-full h-8 font-semibold text-center text-gray-200 bg-teal-500 rounded-3xl">Add to Cart</button>
+                                                        </div>
+                                                    </Link>
+                                                </div>
+                                            </li>
+                                        </Link>
                                     </ul>
                                 </div>
                             ))
@@ -201,18 +213,22 @@ function PharmacyHome() {
                             medicines.map((item, index) => (
                                 <div className="">
                                     <ul className="h-64 mx-2 border border-gray-300 rounded-md" key={index}>
-                                        <li className="grid grid-rows-2">
-                                            <div className="flex items-center justify-center w-full h-40">
-                                                <img alt="medicine" height="40px" width="170px" src={item.img} className="" />
-                                            </div>
-                                            <div className="px-2 py-1">
-                                                <h2 className="font-semibold">{item.name}</h2>
-                                                <p className="">Rs <span className="font-medium text-red-700">{item.price}</span></p>
-                                                <div className="flex items-center justify-center mt-1">
-                                                    <button className="w-full h-8 font-semibold text-center text-gray-200 bg-teal-500 rounded-3xl">Add to Cart</button>
+                                        <Link to='/medicine-details'>
+                                            <li className="grid grid-rows-2">
+                                                <div className="flex items-center justify-center w-full h-40">
+                                                    <img alt="medicine" height="40px" width="170px" src={item.img} className="" />
                                                 </div>
-                                            </div>
-                                        </li>
+                                                <div className="px-2 py-1">
+                                                    <h2 className="font-semibold">{item.name}</h2>
+                                                    <p className="">Rs <span className="font-medium text-red-700">{item.price}</span></p>
+                                                    <Link to="medicine-cart">
+                                                        <div className="flex items-center justify-center mt-1">
+                                                            <button className="w-full h-8 font-semibold text-center text-gray-200 bg-teal-500 rounded-3xl">Add to Cart</button>
+                                                        </div>
+                                                    </Link>
+                                                </div>
+                                            </li>
+                                        </Link>
                                     </ul>
                                 </div>
                             ))
@@ -234,18 +250,20 @@ function PharmacyHome() {
                             medicines.map((item, index) => (
                                 <div className="">
                                     <ul className="h-64 mx-2 border border-gray-300 rounded-md" key={index}>
-                                        <li className="grid grid-rows-2">
-                                            <div className="flex items-center justify-center w-full h-40">
-                                                <img alt="medicine" height="40px" width="170px" src={item.img} className="" />
-                                            </div>
-                                            <div className="px-2 py-1">
-                                                <h2 className="font-semibold">{item.name}</h2>
-                                                <p className="">Rs <span className="font-medium text-red-700">{item.price}</span></p>
-                                                <div className="flex items-center justify-center mt-1">
-                                                    <button className="w-full h-8 font-semibold text-center text-gray-200 bg-teal-500 rounded-3xl">Add to Cart</button>
+                                        <Link to='/medicine-details'>
+                                            <li className="grid grid-rows-2">
+                                                <div className="flex items-center justify-center w-full h-40">
+                                                    <img alt="medicine" height="40px" width="170px" src={item.img} className="" />
                                                 </div>
-                                            </div>
-                                        </li>
+                                                <div className="px-2 py-1">
+                                                    <h2 className="font-semibold">{item.name}</h2>
+                                                    <p className="">Rs <span className="font-medium text-red-700">{item.price}</span></p>
+                                                    <div className="flex items-center justify-center mt-1">
+                                                        <button className="w-full h-8 font-semibold text-center text-gray-200 bg-teal-500 rounded-3xl">Add to Cart</button>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </Link>
                                     </ul>
                                 </div>
                             ))

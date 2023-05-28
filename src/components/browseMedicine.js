@@ -1,5 +1,6 @@
 import React from 'react';
 import Select from 'react-select';
+import { Link } from 'react-router-dom';
 
 import { categories, medicines, selectCategory, selectSorting } from './pharmacyData';
 
@@ -44,15 +45,19 @@ function BrowseMedicine() {
                         medicines.map((item, index) => (
                             <ul className="h-64 bg-white border border-gray-300 rounded-md" key={index}>
                                 <li className="grid grid-rows-2">
-                                    <div className="flex items-center justify-center w-full h-40">
-                                        <img alt="medicine" height="40px" width="170px" src={item.img} className="" />
-                                    </div>
+                                    <Link to='/medicine-details'>
+                                        <div className="flex items-center justify-center w-full h-40">
+                                            <img alt="medicine" height="40px" width="170px" src={item.img} className="" />
+                                        </div>
+                                    </Link>
                                     <div className="px-2 py-1">
                                         <h2 className="font-semibold">{item.name}</h2>
                                         <p className="">Rs <span className="font-medium text-red-700">{item.price}</span></p>
-                                        <div className="flex items-center justify-center mt-1">
-                                            <button className="w-full h-8 font-semibold text-center text-gray-200 bg-teal-500 rounded-3xl">Add to Cart</button>
-                                        </div>
+                                        <Link to="/medicine-cart">
+                                            <div className="flex items-center justify-center mt-1">
+                                                <button className="w-full h-8 font-semibold text-center text-gray-200 bg-teal-500 rounded-3xl">Add to Cart</button>
+                                            </div>
+                                        </Link>
                                     </div>
                                 </li>
                             </ul>
